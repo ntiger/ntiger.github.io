@@ -20,9 +20,9 @@ permalink: /cv/
 > **Chief Technology Officer**
 
 * Developed systems and software for Nautilus research platform to provide enhanced research content:
-* Web-based platform for data analytics, modeling, charting, screening and thesis verification
-* CRM system, accounting/invoicing system
-* Custom risk/portfolio management, idea generation and alpha contribution projects for clients
+    * Web-based platform for data analytics, modeling, charting, screening and thesis verification
+    * CRM system, accounting/invoicing system
+    * Custom risk/portfolio management, idea generation and alpha contribution projects for clients
 * Managing Nautilus software and technology infrastructure
 
 <br/>
