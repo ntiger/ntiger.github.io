@@ -1,7 +1,7 @@
 ---
 layout: page
-title: About
-permalink: /about/
+title: CV
+permalink: /cv/
 ---
 
 #Experience (References are available upon request)
