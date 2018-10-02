@@ -40,14 +40,20 @@ permalink: /cv/
 * Developed RFID technology related applications (windows mobile, web) for location detection, signal enhancement and motion tracking
 * Designed and developed Android apps for user data collection (web browsing history, GPS locations, contact list, call history, etc) and privacy management
 
+<br/>
+
 # Skills
 ***
+* Strong development skills, languages: C, C++, Java, C#, Python, Javascript
+* Professional in quantitative programing, modeling and data analysis
+* In-depth experience and knowledge of web full-stack technologies
+* Professional in object-oriented design/analysis, web and mobile software development
+* Strong SQL & Non-SQL database systems background (MySQL, MS SQL Server, MongoDB, InfluxDB)
+* Fluent with Windows Server, UNIX, LINUX systems
 * Proven leadership ability to manage, prioritize and coordinate multiple projects
-* Excellent communication skills to coordinate with team members and clients from different background
-* Professional in quantitative programing and data analysis
-* Strong software development skills, languages: C, C++, Java, C#, Python, Javascript
-* In-depth knowledge of web full-stack technologies
-* Solid database and Windows Server, Unix, Linux systems background
+
+
+<br/>
 
 # Education
 ***
