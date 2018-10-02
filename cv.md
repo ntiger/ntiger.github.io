@@ -11,7 +11,9 @@ permalink: /cv/
 
 * Developed strategy back testing, signal generation, order process and risk management systems for daily trading
 * Developed CRM and accounting system for operation
-* Developing high frequency and high profitable investment models and building fully automatic trading systems
+* Developing high frequency and high profitable investment models and building fully automatic trading systems  
+
+<br/>
 
 ### Nautilus Investment Research LLC. Boston, MA &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *Aug 2011 – Present*
 
@@ -23,11 +25,15 @@ permalink: /cv/
 * Custom risk/portfolio management, idea generation and alpha contribution projects for clients
 * Managing Nautilus software and technology infrastructure
 
-### Rush University & CASL Inc. Chicago, IL &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Jan *2011 – Aug 2011*
+<br/>
+
+### Rush University & CASL Inc. Chicago, IL &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *Jan 2011 – Aug 2011*
 
 > **Software Engineer**
 
 * Created an online multi-language web survey system for research, focused on the elderly population in Chicago area
+
+<br/>
 
 ### Motorola Inc. Schaumburg, IL &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *Jan 2009 – Dec 2010*
 > **Software Engineer**
