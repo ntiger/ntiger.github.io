@@ -61,4 +61,4 @@ permalink: /cv/
 Master of Science in Computer Science, Dec 2010
 
 **Beijing University of Technology**  
- Bachelor of Engineering in Software Engineering, June 2008#
+ Bachelor of Engineering in Software Engineering, June 2008
