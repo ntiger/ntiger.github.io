@@ -47,7 +47,7 @@ permalink: /cv/
 * Strong development skills, languages: C, C++, Java, C#, Python, Javascript
 * Professional in quantitative programing, modeling and data analysis
 * In-depth experience and knowledge of web full-stack technologies
-* Professional in object-oriented design/analysis, web and mobile software development
+* Professional in object-oriented design/architect, web and mobile software development
 * Strong SQL & Non-SQL database systems background (MySQL, MS SQL Server, MongoDB, InfluxDB)
 * Fluent with Windows Server, UNIX, LINUX systems
 * Proven leadership ability to manage, prioritize and coordinate multiple projects
