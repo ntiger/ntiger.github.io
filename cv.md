@@ -11,7 +11,7 @@ permalink: /cv/
 
 * Developed strategy back testing, signal generation, order process and risk management systems for daily trading
 * Developed CRM and accounting system for operation
-* Developing high frequency and high profitable investment models and building fully automatic trading systems  
+* Developing high frequency investment models and building fully automatic trading systems  
 
 <br/>
 
