@@ -5,16 +5,6 @@ permalink: /cv/
 ---
 
 ***
-### Fox Capital Management LLC. Norwood MA &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *Jul 2017 – Present*
-
-> **Senior Quantitative System Developer**
-
-* Developed strategy back testing, signal generation, order process and risk management systems for daily trading
-* Developed CRM and accounting system for operation
-* Developing high frequency investment models and building fully automatic trading systems  
-
-<br/>
-
 ### Nautilus Investment Research LLC. Boston, MA &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *Aug 2011 – Present*
 
 > **Chief Technology Officer**
@@ -24,6 +14,16 @@ permalink: /cv/
     * CRM system, accounting/invoicing system
     * Custom risk/portfolio management, idea generation and alpha contribution projects for clients
 * Managing Nautilus software and technology infrastructure
+
+<br/>
+
+### Fox Capital Management LLC. Norwood MA &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *Jul 2017 – Jul 2019*
+
+> **Senior Quantitative System Developer**
+
+* Developed strategy back testing, signal generation, order process and risk management systems for daily trading
+* Developed CRM and accounting system for operation
+* Developing high frequency investment models and building fully automatic trading systems  
 
 <br/>
 
