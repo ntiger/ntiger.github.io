@@ -9,21 +9,22 @@ permalink: /cv/
 
 > **Chief Technology Officer**
 
-* Developed systems and software for Nautilus research platform to provide enhanced research content:
+* Develop systems and software for Nautilus research platform to provide enhanced research content:
     * Web-based platform for data analytics, modeling, charting, screening and thesis verification
-    * CRM system, accounting/invoicing system
-    * Custom risk/portfolio management, idea generation and alpha contribution projects for clients
-* Managing Nautilus software and technology infrastructure
+    * CRM, accounting/invoicing system
+    * Customized risk/portfolio management, alpha generation projects
+* Author daily technical and quantitative research
+* Manage Nautilus software and technology infrastructure
 
 <br/>
 
-### Fox Capital Management LLC. Norwood MA &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *Jul 2017 – Jul 2019*
+### Fox Capital Management LLC. Norwood MA &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *Jul 2017 – July 2019*
 
 > **Senior Quantitative System Developer**
 
 * Developed strategy back testing, signal generation, order process and risk management systems for daily trading
 * Developed CRM and accounting system for operation
-* Developing high frequency investment models and building fully automatic trading systems  
+* Developed high frequency investment models and building fully automatic trading systems  
 
 <br/>
 
