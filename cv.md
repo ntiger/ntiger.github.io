@@ -7,7 +7,7 @@ permalink: /cv/
 ***
 ### Nautilus Investment Research LLC. Boston, MA &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *Aug 2011 – Present*
 
-> **Chief Technology Officer**
+> **Partner & Chief Technology Officer**
 
 * Develop systems and software for Nautilus research platform to provide enhanced research content:
     * Web-based platform for data analytics, modeling, charting, screening and thesis verification
