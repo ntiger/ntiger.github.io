@@ -13,80 +13,100 @@
 /* BASE RULES */
 /**************/
 
+:root {
+  --glass-bg: rgba(255, 255, 255, 0.12);
+  --glass-strong: rgba(255, 255, 255, 0.16);
+  --glass-border: rgba(255, 255, 255, 0.26);
+  --text-main: #e5e7eb;
+  --text-soft: #cbd5e1;
+  --text-title: #f8fafc;
+  --accent: #93c5fd;
+  --accent-strong: #c4b5fd;
+}
+
 html {
   font-size: 100%;
 }
 
 body {
+  min-height: 100vh;
   background:
-    radial-gradient(circle at 10% 20%, rgba(56, 189, 248, 0.28), transparent 35%),
-    radial-gradient(circle at 85% 15%, rgba(168, 85, 247, 0.22), transparent 35%),
-    radial-gradient(circle at 80% 85%, rgba(99, 102, 241, 0.25), transparent 38%),
-    linear-gradient(135deg, #0f172a 0%, #111827 45%, #1f2937 100%);
+    radial-gradient(40rem 24rem at 8% 8%, rgba(56, 189, 248, 0.26), transparent 50%),
+    radial-gradient(36rem 20rem at 88% 14%, rgba(167, 139, 250, 0.22), transparent 55%),
+    radial-gradient(44rem 28rem at 84% 88%, rgba(59, 130, 246, 0.18), transparent 55%),
+    linear-gradient(135deg, #0b1222 0%, #111827 42%, #1f2937 100%);
   background-attachment: fixed;
-  font: 18px/1.6 $helvetica;
-  color: #e5e7eb;
+  font: 18px/1.72 "Inter", "SF Pro Text", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: var(--text-main);
+  letter-spacing: 0.01em;
 }
 
 .container {
   margin: 0 auto;
-  max-width: 860px;
-  padding: 0 14px;
+  max-width: 1040px;
+  padding: 0 22px;
   width: 100%;
+
+  @include mobile {
+    padding: 0 14px;
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $helveticaNeue;
-  color: #f9fafb;
-  font-weight: bold;
-
-  line-height: 1.7;
-  margin: 1em 0 15px;
-  padding: 0;
+  font-family: "Manrope", "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: var(--text-title);
+  font-weight: 700;
+  line-height: 1.35;
+  margin: 1.2em 0 0.55em;
 
   @include mobile {
-    line-height: 1.4;
+    line-height: 1.3;
   }
 }
 
 h1 {
-  font-size: 30px;
+  font-size: clamp(2rem, 1.6rem + 1.2vw, 2.65rem);
+  letter-spacing: -0.02em;
+
   a {
     color: inherit;
   }
 }
 
 h2 {
-  font-size: 24px;
+  font-size: clamp(1.55rem, 1.35rem + 0.7vw, 2rem);
+  letter-spacing: -0.015em;
 }
 
 h3 {
-  font-size: 20px;
+  font-size: clamp(1.25rem, 1.1rem + 0.45vw, 1.55rem);
 }
 
 h4 {
-  font-size: 18px;
-  color: $gray;
+  font-size: 1.1rem;
+  color: var(--text-soft);
 }
 
 p {
-  margin: 15px 0;
+  margin: 0.95rem 0;
 }
 
 a {
-  color: #93c5fd;
+  color: var(--accent);
   text-decoration: none;
   cursor: pointer;
-  transition: color 0.2s ease;
+  transition: color 0.2s ease, text-shadow 0.2s ease;
 
-  &:hover, &:active {
-    color: #bfdbfe;
+  &:hover,
+  &:active {
+    color: #dbeafe;
+    text-shadow: 0 0 14px rgba(147, 197, 253, 0.45);
   }
 }
 
 ul, ol {
-  margin: 15px 0;
-  padding-left: 30px;
+  margin: 0.9rem 0;
+  padding-left: 1.5rem;
 }
 
 ul {
@@ -98,7 +118,7 @@ ol {
 }
 
 ol ul, ul ol, ul ul, ol ol {
-  margin: 0;
+  margin: 0.3rem 0;
 }
 
 ul ul, ol ul {
@@ -110,85 +130,84 @@ em, i {
 }
 
 strong, b {
-  font-weight: bold;
+  font-weight: 700;
 }
 
 img {
   max-width: 100%;
 }
 
-// Fixes images in popup boxes from Google Translate
 .gmnoprint img {
   max-width: none;
 }
 
 .date {
   font-style: italic;
-  color: $gray;
+  color: #bfdbfe;
 }
 
-// Specify the color of the selection
 ::-moz-selection {
-  color: $black;
-  background: $lightGray;
-}
-::selection {
-  color: $black;
-  background: $lightGray;
+  color: #0f172a;
+  background: #bfdbfe;
 }
 
-// Nicolas Gallagher's micro clearfix hack
-// http://nicolasgallagher.com/micro-clearfix-hack/
+::selection {
+  color: #0f172a;
+  background: #bfdbfe;
+}
+
 .clearfix:before,
 .clearfix:after {
-    content: " ";
-    display: table;
+  content: " ";
+  display: table;
 }
 
 .clearfix:after {
-    clear: both;
+  clear: both;
 }
 
 /*********************/
 /* LAYOUT / SECTIONS */
 /*********************/
 
-//
-// .masthead
-//
-
 .wrapper-masthead {
-  margin: 30px 0 28px;
+  margin: clamp(18px, 3.5vh, 44px) 0 clamp(16px, 2.3vh, 30px);
 }
 
 .masthead {
-  padding: 20px 24px;
-  border: 1px solid rgba(255, 255, 255, 0.28);
-  border-radius: 20px;
-  background: rgba(255, 255, 255, 0.12);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-  box-shadow: 0 18px 42px rgba(2, 6, 23, 0.35);
+  padding: 24px 28px;
+  border: 1px solid var(--glass-border);
+  border-radius: 24px;
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.19), rgba(255, 255, 255, 0.08));
+  backdrop-filter: blur(18px) saturate(140%);
+  -webkit-backdrop-filter: blur(18px) saturate(140%);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.25),
+    0 18px 42px rgba(2, 6, 23, 0.42);
 
   @include mobile {
+    padding: 18px 16px;
     text-align: center;
+    border-radius: 18px;
   }
 }
 
 .site-avatar {
   float: left;
-  width: 70px;
-  height: 70px;
-  margin-right: 15px;
+  width: 76px;
+  height: 76px;
+  margin-right: 16px;
 
   @include mobile {
     float: none;
     display: block;
-    margin: 0 auto;
+    margin: 0 auto 10px;
   }
 
   img {
-    border-radius: 5px;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.32);
+    box-shadow: 0 10px 24px rgba(15, 23, 42, 0.3);
   }
 }
 
@@ -206,112 +225,126 @@ img {
   margin: 0;
   color: #ffffff;
   cursor: pointer;
-  font-family: $helveticaNeue;
-  font-weight: 300;
-  font-size: 28px;
-  letter-spacing: 1px;
+  font-family: "Manrope", "Inter", sans-serif;
+  font-weight: 800;
+  font-size: clamp(1.5rem, 1.2rem + 0.8vw, 2rem);
+  letter-spacing: -0.02em;
 }
 
 .site-description {
-  margin: -5px 0 0 0;
-  color: rgba(229, 231, 235, 0.86);
-  font-size: 16px;
+  margin: 2px 0 0;
+  color: rgba(226, 232, 240, 0.9);
+  font-size: 0.98rem;
 
   @include mobile {
-    margin: 3px 0;
+    margin: 6px 0 0;
   }
 }
 
 nav {
   float: right;
-  margin-top: 23px; // @TODO: Vertically middle align
-  font-family: $helveticaNeue;
-  font-size: 18px;
+  margin-top: 24px;
+  font-family: "Inter", sans-serif;
+  font-size: 0.98rem;
 
   @include mobile {
     float: none;
-    margin-top: 9px;
+    margin-top: 12px;
     display: block;
-    font-size: 16px;
+    font-size: 0.95rem;
   }
 
   a {
-    margin-left: 20px;
+    display: inline-block;
+    margin-left: 12px;
+    padding: 7px 12px;
+    border: 1px solid transparent;
+    border-radius: 999px;
     color: #e2e8f0;
-    text-align: right;
-    font-weight: 400;
-    letter-spacing: 0.6px;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    transition: all 0.22s ease;
+
+    &:hover {
+      border-color: rgba(255, 255, 255, 0.35);
+      background: rgba(255, 255, 255, 0.15);
+      color: #ffffff;
+      text-shadow: none;
+      transform: translateY(-1px);
+    }
 
     @include mobile {
-      margin: 0 10px;
-      color: #bfdbfe;
+      margin: 4px 6px;
     }
   }
 }
 
-//
-// .main
-//
-
 #main {
-  padding: 26px 30px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 22px;
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  box-shadow: 0 18px 45px rgba(2, 6, 23, 0.35);
+  padding: clamp(20px, 3.2vw, 38px) clamp(18px, 3.4vw, 44px);
+  border: 1px solid var(--glass-border);
+  border-radius: 26px;
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.17), rgba(255, 255, 255, 0.07));
+  backdrop-filter: blur(22px) saturate(145%);
+  -webkit-backdrop-filter: blur(22px) saturate(145%);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.24),
+    0 26px 52px rgba(2, 6, 23, 0.4);
 
   @include mobile {
-    padding: 18px 16px;
+    border-radius: 18px;
+    padding: 18px 14px;
   }
 }
 
 .posts > .post {
-  padding-bottom: 2em;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+  padding-bottom: 2rem;
+  margin-bottom: 1.2rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.22);
 }
 
 .posts > .post:last-child {
-  padding-bottom: 1em;
+  padding-bottom: 0.5rem;
   border-bottom: none;
 }
 
 .post {
-  blockquote {
-    margin: 1.8em .8em;
-    border-left: 2px solid rgba(191, 219, 254, 0.7);
-    padding: 0.1em 1em;
-    color: rgba(226, 232, 240, 0.95);
-    font-size: 22px;
-    font-style: italic;
-  }
-
   .comments {
     margin-top: 10px;
   }
 
   .read-more {
     text-transform: uppercase;
-    font-size: 15px;
+    font-size: 0.78rem;
+    letter-spacing: 0.08em;
+    font-weight: 600;
+  }
+
+  blockquote {
+    margin: 1.6rem 0.6rem;
+    border-left: 3px solid rgba(196, 181, 253, 0.8);
+    padding: 0.2rem 1rem;
+    color: #dbeafe;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 0 12px 12px 0;
+    font-size: 1.15rem;
+    font-style: italic;
   }
 }
 
 .wrapper-footer {
-  margin: 28px 0 34px;
+  margin: 22px 0 34px;
 }
 
 footer {
-  padding: 18px 0;
+  padding: 18px 12px;
   text-align: center;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid var(--glass-border);
   border-radius: 16px;
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  background: var(--glass-bg);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
-// ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
 @import "svg-icons";
