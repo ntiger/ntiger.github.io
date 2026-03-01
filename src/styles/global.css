@@ -1,0 +1,57 @@
+:root {
+  --glass-bg: rgba(255, 255, 255, 0.12);
+  --glass-border: rgba(255, 255, 255, 0.24);
+  --text-main: #e5e7eb;
+  --text-soft: #cbd5e1;
+  --text-title: #f8fafc;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(40rem 24rem at 8% 8%, rgba(56, 189, 248, 0.26), transparent 50%),
+    radial-gradient(36rem 20rem at 88% 14%, rgba(167, 139, 250, 0.22), transparent 55%),
+    radial-gradient(44rem 28rem at 84% 88%, rgba(59, 130, 246, 0.18), transparent 55%),
+    linear-gradient(135deg, #0b1222 0%, #111827 42%, #1f2937 100%);
+  color: var(--text-main);
+  font: 18px/1.72 "Inter", "SF Pro Text", -apple-system, sans-serif;
+}
+
+.container { max-width: 1040px; margin: 0 auto; padding: 24px 16px; }
+
+.glass {
+  border: 1px solid var(--glass-border);
+  background: linear-gradient(145deg, rgba(255,255,255,.16), rgba(255,255,255,.07));
+  backdrop-filter: blur(18px) saturate(140%);
+  -webkit-backdrop-filter: blur(18px) saturate(140%);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 18px 42px rgba(2,6,23,.42);
+  border-radius: 22px;
+}
+
+.masthead { padding: 20px; display: flex; justify-content: space-between; align-items: center; gap: 16px; }
+.brand { display: flex; align-items: center; gap: 14px; }
+.avatar { width: 72px; height: 72px; border-radius: 16px; object-fit: cover; }
+h1,h2,h3 { font-family: "Manrope", "Inter", sans-serif; color: var(--text-title); margin: 0.7em 0 0.4em; }
+h1 { margin: 0; font-size: 2rem; }
+.brand p { margin: 2px 0 0; color: var(--text-soft); }
+
+nav a, .footer a { color: #dbeafe; text-decoration: none; margin-left: 8px; padding: 6px 10px; border-radius: 999px; }
+nav a:hover, .footer a:hover { background: rgba(255,255,255,.15); }
+
+.content { margin-top: 18px; padding: 28px; }
+.footer { margin-top: 18px; padding: 14px; text-align: center; }
+
+a { color: #93c5fd; }
+ul { padding-left: 20px; }
+
+.timeline-item { margin-bottom: 24px; }
+.timeline-item h3 { margin-bottom: 6px; }
+.role { color: #dbeafe; font-weight: 700; margin: 4px 0; }
+
+@media (max-width: 760px) {
+  .masthead { flex-direction: column; align-items: flex-start; }
+  .content { padding: 18px; }
+}
