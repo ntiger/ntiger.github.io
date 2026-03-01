@@ -5,6 +5,18 @@ permalink: /cv/
 ---
 
 ***
+### Musket Corp. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *Oct 2024 – Present*
+
+> **Manager of Analytics** *(Jun 2025 – Present)*
+
+> **Quant Analyst** *(Oct 2024 – May 2025)*
+
+* Lead analytics initiatives spanning quantitative research, reporting, and business decision support
+* Built and enhanced quantitative models and analysis workflows for market and operational insights
+* Partnered cross-functionally with stakeholders to translate data into actionable strategies
+
+<br/>
+
 ### Nautilus Investment Research LLC. Boston, MA &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *Aug 2011 – Present*
 
 > **Partner & Chief Technology Officer**

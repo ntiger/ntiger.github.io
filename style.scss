@@ -18,21 +18,26 @@ html {
 }
 
 body {
-	background: $white;
-  font: 18px/1.4 $helvetica;
-  color: $darkGray;
+  background:
+    radial-gradient(circle at 10% 20%, rgba(56, 189, 248, 0.28), transparent 35%),
+    radial-gradient(circle at 85% 15%, rgba(168, 85, 247, 0.22), transparent 35%),
+    radial-gradient(circle at 80% 85%, rgba(99, 102, 241, 0.25), transparent 38%),
+    linear-gradient(135deg, #0f172a 0%, #111827 45%, #1f2937 100%);
+  background-attachment: fixed;
+  font: 18px/1.6 $helvetica;
+  color: #e5e7eb;
 }
 
 .container {
   margin: 0 auto;
-  max-width: 740px;
-  padding: 0 10px;
+  max-width: 860px;
+  padding: 0 14px;
   width: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $helveticaNeue;
-  color: $darkerGray;
+  color: #f9fafb;
   font-weight: bold;
 
   line-height: 1.7;
@@ -69,11 +74,13 @@ p {
 }
 
 a {
-  color: $blue;
+  color: #93c5fd;
   text-decoration: none;
-	cursor: pointer;
+  cursor: pointer;
+  transition: color 0.2s ease;
+
   &:hover, &:active {
-    color: $blue;
+    color: #bfdbfe;
   }
 }
 
@@ -151,12 +158,17 @@ img {
 //
 
 .wrapper-masthead {
-  margin-bottom: 50px;
+  margin: 30px 0 28px;
 }
 
 .masthead {
-  padding: 20px 0;
-  border-bottom: 1px solid $lightGray;
+  padding: 20px 24px;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: 0 18px 42px rgba(2, 6, 23, 0.35);
 
   @include mobile {
     text-align: center;
@@ -192,7 +204,7 @@ img {
 
 .site-name {
   margin: 0;
-  color: $darkGray;
+  color: #ffffff;
   cursor: pointer;
   font-family: $helveticaNeue;
   font-weight: 300;
@@ -202,7 +214,7 @@ img {
 
 .site-description {
   margin: -5px 0 0 0;
-  color: $gray;
+  color: rgba(229, 231, 235, 0.86);
   font-size: 16px;
 
   @include mobile {
@@ -225,14 +237,14 @@ nav {
 
   a {
     margin-left: 20px;
-    color: $darkGray;
+    color: #e2e8f0;
     text-align: right;
-    font-weight: 300;
-    letter-spacing: 1px;
+    font-weight: 400;
+    letter-spacing: 0.6px;
 
     @include mobile {
       margin: 0 10px;
-      color: $blue;
+      color: #bfdbfe;
     }
   }
 }
@@ -241,9 +253,23 @@ nav {
 // .main
 //
 
+#main {
+  padding: 26px 30px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  box-shadow: 0 18px 45px rgba(2, 6, 23, 0.35);
+
+  @include mobile {
+    padding: 18px 16px;
+  }
+}
+
 .posts > .post {
   padding-bottom: 2em;
-  border-bottom: 1px solid $lightGray;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .posts > .post:last-child {
@@ -254,9 +280,9 @@ nav {
 .post {
   blockquote {
     margin: 1.8em .8em;
-    border-left: 2px solid $gray;
+    border-left: 2px solid rgba(191, 219, 254, 0.7);
     padding: 0.1em 1em;
-    color: $gray;
+    color: rgba(226, 232, 240, 0.95);
     font-size: 22px;
     font-style: italic;
   }
@@ -272,15 +298,17 @@ nav {
 }
 
 .wrapper-footer {
-  margin-top: 50px;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  background-color: $lightGray;
+  margin: 28px 0 34px;
 }
 
 footer {
-  padding: 20px 0;
+  padding: 18px 0;
   text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
