@@ -4,74 +4,56 @@ title: Experience
 permalink: /cv/
 ---
 
-***
-### Musket Corp. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *Oct 2024 – Present*
+## Experience
 
-> **Manager of Analytics** *(Jun 2025 – Present)*
+### Musket Corporation — Houston, TX | Oct 2024 – Present  
+**Manager of Analytics** | Jun 2025 – Present  
+**Quantitative Analyst** | Oct 2024 – May 2025  
+- Lead analytics initiatives across quantitative research, reporting, and executive decision support for trading and commercial stakeholders  
+- Lead AI/ML initiatives, including rapid prototyping and deployment of internal AI tools to automate analysis, improve data accessibility, and support business workflows  
+- Design and productionize analytical models and workflows to improve market insight, risk visibility, and operational performance  
+- Drive cross-functional alignment by translating business questions into clear requirements, measurable deliverables, and actionable recommendations  
+- Manage and mentor analysts; prioritize roadmap, set standards, and ensure high-quality delivery under tight timelines  
 
-> **Quant Analyst** *(Oct 2024 – May 2025)*
+### Nautilus Investment Research LLC — Boston, MA | Aug 2011 – Present  
+**Partner & Chief Technology Officer**  
+- Architect and maintain the firm’s research technology stack supporting quantitative research, screening, and thesis verification  
+- Built a web-based analytics platform for data ingestion, modeling, charting, backtesting, and research publishing  
+- Developed internal business systems: CRM, accounting/invoicing, and customized risk/portfolio management tools  
+- Author daily technical and quantitative research; own infrastructure reliability, security, and ongoing modernization  
 
-* Lead analytics initiatives spanning quantitative research, reporting, and business decision support
-* Built and enhanced quantitative models and analysis workflows for market and operational insights
-* Partnered cross-functionally with stakeholders to translate data into actionable strategies
+### Fox Capital Management LLC — Norwood, MA | Jul 2017 – Jul 2019  
+**Senior Quantitative Systems Developer**  
+- Developed end-to-end trading systems: strategy backtesting, signal generation, order workflow, and risk management for daily trading  
+- Built operational tooling (CRM, accounting, reporting) to streamline front-to-back processes  
+- Implemented automated trading and monitoring pipelines to improve robustness, repeatability, and operational efficiency  
 
-<br/>
+### Rush University & CASL Inc. — Chicago, IL | Jan 2011 – Aug 2011  
+**Software Engineer**  
+- Built an online multilingual web survey platform for research studies, optimized for accessibility and elderly participants  
+- Implemented secure data capture, validation, and reporting workflows to support researchers and study operations  
 
-### Nautilus Investment Research LLC. Boston, MA &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *Aug 2011 – Present*
-
-> **Partner & Chief Technology Officer**
-
-* Develop systems and software for Nautilus research platform to provide enhanced research content:
-    * Web-based platform for data analytics, modeling, charting, screening and thesis verification
-    * CRM, accounting/invoicing system
-    * Customized risk/portfolio management, alpha generation projects
-* Author daily technical and quantitative research
-* Manage Nautilus software and technology infrastructure
-
-<br/>
-
-### Fox Capital Management LLC. Norwood MA &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *Jul 2017 – July 2019*
-
-> **Senior Quantitative System Developer**
-
-* Developed strategy back testing, signal generation, order process and risk management systems for daily trading
-* Developed CRM and accounting system for operation
-* Developed high frequency investment models and building fully automatic trading systems  
-
-<br/>
-
-### Rush University & CASL Inc. Chicago, IL &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *Jan 2011 – Aug 2011*
-
-> **Software Engineer**
-
-* Created an online multi-language web survey system for research, focused on the elderly population in Chicago area
-
-<br/>
-
-### Motorola Inc. Schaumburg, IL &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *Jan 2009 – Dec 2010*
-> **Software Engineer**
-* Developed RFID technology related applications (windows mobile, web) for location detection, signal enhancement and motion tracking
-* Designed and developed Android apps for user data collection (web browsing history, GPS locations, contact list, call history, etc) and privacy management
-
-<br/>
-
-# Skills
-***
-* Strong development skills, languages: C, C++, Java, C#, Python, Javascript
-* Professional in quantitative programing, modeling and data analysis
-* In-depth experience and knowledge of web full-stack technologies
-* Professional in object-oriented design/architect, web and mobile app development
-* Strong SQL & Non-SQL database systems background (MySQL, MS SQL Server, MongoDB, InfluxDB)
-* Fluent with Windows Server, UNIX, LINUX systems
-* Proven leadership ability to manage, prioritize and coordinate multiple projects
+### Motorola Inc. — Schaumburg, IL | Jan 2009 – Dec 2010  
+**Software Engineer**  
+- Developed RFID applications (Windows Mobile + web) for location detection, signal enhancement, and motion tracking  
+- Designed and built Android applications for user-consented data collection and privacy/permission management to support enterprise and research use cases  
 
 
-<br/>
+## Skills
 
-# Education
-***
+- **Programming:** Python, C#, Java, JavaScript/TypeScript, C/C++  
+- **AI / ML:** machine learning workflows, feature engineering, model evaluation, prompt engineering, LLM application development, retrieval-augmented generation (RAG), AI agent/tooling concepts  
+- **Data & Analytics:** quantitative modeling, statistical analysis, time-series workflows, backtesting, risk/portfolio analytics  
+- **Data Engineering:** API integrations, data pipelines/ETL, productionizing analytics and ML workflows  
+- **Databases:** SQL (MySQL, SQL Server), NoSQL (MongoDB), time-series (InfluxDB)  
+- **Web & Systems:** full-stack web development, API design, object-oriented architecture, Windows Server, Linux/Unix  
+- **Leadership:** team management, prioritization, cross-functional communication, delivery ownership  
+
+
+## Education
+
 **University of Illinois at Chicago**  
-Master of Science in Computer Science, Dec 2010
+M.S. in Computer Science, Dec 2010  
 
 **Beijing University of Technology**  
- Bachelor of Engineering in Software Engineering, June 2008
+B.E. in Software Engineering, Jun 2008  
