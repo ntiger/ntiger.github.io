@@ -65,7 +65,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: clamp(2rem, 1.6rem + 1.2vw, 2.65rem);
+  font-size: clamp(2rem, calc(1.6rem + 1.2vw), 2.65rem);
   letter-spacing: -0.02em;
 
   a {
@@ -74,12 +74,12 @@ h1 {
 }
 
 h2 {
-  font-size: clamp(1.55rem, 1.35rem + 0.7vw, 2rem);
+  font-size: clamp(1.55rem, calc(1.35rem + 0.7vw), 2rem);
   letter-spacing: -0.015em;
 }
 
 h3 {
-  font-size: clamp(1.25rem, 1.1rem + 0.45vw, 1.55rem);
+  font-size: clamp(1.25rem, calc(1.1rem + 0.45vw), 1.55rem);
 }
 
 h4 {
