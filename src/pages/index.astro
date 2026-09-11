@@ -1,7 +1,31 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+const work = [
+  { number: '01', title: 'Risk & trading analytics', description: 'In-house VaR, trader performance tools, and fair value models for crude and refined products.', label: 'Quantitative research', style: 'risk', words: ['Market risk', 'Fair value', 'Trading insight'] },
+  { number: '02', title: 'A clearer view of global flows', description: 'Vessel tracking and flow analysis that help trading teams understand how physical markets are moving.', label: 'Market intelligence', style: 'flows', words: ['Vessels', 'Cargoes', 'Global flows'] },
+  { number: '03', title: 'Tools people can use', description: 'Data pipelines and web applications that bring research into everyday decisions, including the tools behind d’ART.', label: 'Data & engineering', style: 'tools', words: ['Data', 'Models', 'Applications'] }
+];
 ---
-<BaseLayout title="Xiao Wang | Home">
-  <h2>Hi, I’m Xiao Wang</h2>
-  <p>Analytics and technology leader, full-stack & quantitative developer focused on analytics platforms, data systems, and investment technology.</p>
+<BaseLayout pageClass="home">
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero-heading"><p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Analytics leader. Engineer at heart.</p><h1 id="hero-title">Making data<br /><span class="accent">work in the<br class="mobile-break" /> real world.</span></h1></div>
+    <div class="hero-bottom">
+      <div class="hero-copy"><p class="hero-intro">Hi, I’m Xiao. I build models and software that help people make better trading decisions.</p><dl class="hero-details"><div><dt>Currently</dt><dd>Manager of Analytics at Musket</dd></div><div><dt>Based in</dt><dd>Houston, Texas</dd></div></dl><a class="text-link" href="#work">Explore my work <span aria-hidden="true">↓</span></a></div>
+      <figure class="portrait"><img src="/images/xwang.jpg" alt="Portrait of Xiao Wang" width="1195" height="943" fetchpriority="high" /><figcaption><span>Xiao Wang</span><span>Quant meets code.</span></figcaption></figure>
+    </div>
+    <div class="expertise-strip" aria-label="Areas of expertise"><span>Quantitative research</span><span>Full-stack engineering</span><span>Data platforms</span><span>Team leadership</span></div>
+  </section>
+  <section id="work" class="section" aria-labelledby="work-title">
+    <div class="section-heading" data-reveal><p class="eyebrow">Selected work</p><h2 id="work-title">The business question<br />comes first.</h2><p>My work sits where markets and technology meet. At Musket, I lead an analytics team building the models and systems behind trading decisions.</p></div>
+    <div class="work-list">{work.map((item) => <article class="work-item" data-reveal><div class:list={['work-visual', item.style]} aria-hidden="true"><span class="visual-number">{item.number}</span><div class="visual-words">{item.words.map((word) => <span>{word}</span>)}</div><span class="visual-caption">{item.label}</span></div><div class="work-copy"><p class="eyebrow">{item.label}</p><h3>{item.title}</h3><p>{item.description}</p></div></article>)}</div>
+  </section>
+  <section id="journey" class="section journey" aria-labelledby="journey-title">
+    <div class="section-heading" data-reveal><p class="eyebrow">My Musket journey</p><h2 id="journey-title">A new market.<br />A growing role.</h2><p>I joined with a background in software engineering and quantitative research. My role has grown to include leading the team and setting analytics priorities.</p></div>
+    <ol class="timeline"><li data-reveal><time datetime="2024-10">October 2024</time><div><h3>Joined Musket</h3><p>Started as a Quant Analyst, applying my engineering and research experience to commodity trading.</p></div></li><li data-reveal><time datetime="2025-06">June 2025</time><div><h3>Stepped into analytics leadership</h3><p>Became Manager of Analytics, with a broader focus on the team, our priorities, and the tools we deliver.</p></div></li><li data-reveal><time datetime="2025-08">August 2025</time><div><h3>Made Houston home</h3><p>Moved from the Boston area to work alongside the Houston team. Two young boys and our dog came along for the drive.</p></div></li></ol>
+    <a class="text-link" href="/cv/">See my full background <span aria-hidden="true">↗</span></a>
+  </section>
+  <section class="section personal" aria-labelledby="personal-title" data-reveal>
+    <div><p class="eyebrow">Away from the keyboard</p><h2 id="personal-title">Two boys.<br />One dog.<br /><span class="accent">Plenty of adventure.</span></h2></div>
+    <div class="personal-copy"><p>I’m a dad to Andrey and Eddie, and we have a family dog. Outside of work, life is a little less predictable and a lot of fun.</p><div class="road-trip"><span class="eyebrow">A fun fact</span><h3>Boston to Houston.<br />The whole crew.</h3><p>When I moved in August 2025, I drove from Boston to Houston with both boys and our dog. Quite a different kind of logistics project.</p></div><a class="text-link" href="/about/">A little more about me <span aria-hidden="true">↗</span></a></div>
+  </section>
 </BaseLayout>
