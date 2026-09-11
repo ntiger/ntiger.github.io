@@ -1,58 +1,52 @@
 ---
 import '../styles/global.css';
-const { title = 'Xiao Wang', description = 'Engineering Manager, Full-Stack & Quantitative Development' } = Astro.props;
+const { title = 'Xiao Wang | Analytics & Engineering', description = 'Xiao Wang is a Houston-based analytics and technology leader at Musket Corporation, building quantitative models, data platforms, and tools for commodity trading.', pageClass = '' } = Astro.props;
+const currentPath = Astro.url.pathname.replace(/\/$/, '') || '/';
+const links = [{ label: 'Home', href: '/' }, { label: 'CV', href: '/cv/' }, { label: 'About', href: '/about/' }];
 ---
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f7f8fa" />
     <title>{title}</title>
     <meta name="description" content={description} />
+    <link rel="canonical" href={new URL(Astro.url.pathname, 'https://ntiger.me')} />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   </head>
   <body>
-    <div class="container">
-      <header class="glass masthead">
-        <div class="brand">
-          <img src="/images/xwang.jpg" alt="Xiao Wang avatar" class="avatar" />
-          <div>
-            <h1>Xiao Wang</h1>
-            <p>Engineering Manager, Full-Stack & Quantitative Development</p>
-          </div>
-        </div>
-        <nav>
-          <a href="/">Home</a>
-          <a href="/cv">CV</a>
-          <a href="/about">About</a>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="/" aria-label="Xiao Wang, home"><span class="monogram" aria-hidden="true">xw.</span><span>Xiao Wang</span></a>
+        <nav aria-label="Main navigation">
+          {links.map(({ label, href }) => <a href={href} aria-current={currentPath === (href.replace(/\/$/, '') || '/') ? 'page' : undefined}>{label}</a>)}
         </nav>
-      </header>
-
-      <main class="glass content">
-        <slot />
-      </main>
-
-      <footer class="glass footer">
-        <div class="social-links" aria-label="Social links">
-          <a class="icon-link" href="https://github.com/ntiger" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-            <span>GH</span>
-          </a>
-          <a class="icon-link" href="https://www.linkedin.com/in/xiao-wang-495b5412/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-            <span>in</span>
-          </a>
-          <a class="icon-link" href="https://instagram.com/ntiger" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-            <span>IG</span>
-          </a>
-          <a class="icon-link" href="https://twitter.com/nwtiger" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
-            <span>X</span>
-          </a>
-          <a class="icon-link" href="mailto:shawn.ntiger@gmail.com" aria-label="Email">
-            <span>@</span>
-          </a>
-        </div>
-      </footer>
-    </div>
+        <a class="contact-link" href="mailto:shawn.ntiger@gmail.com">Say hello <span aria-hidden="true">↗</span></a>
+      </div>
+    </header>
+    <main id="main" class:list={['main', pageClass]} tabindex="-1"><slot /></main>
+    <footer class="site-footer" id="contact">
+      <div class="footer-top"><div><p class="eyebrow">Let’s connect</p><h2>Good things start<br />with a conversation.</h2></div><a class="email-link" href="mailto:shawn.ntiger@gmail.com">shawn.ntiger@gmail.com <span aria-hidden="true">↗</span></a></div>
+      <div class="footer-bottom"><a class="brand" href="/">Xiao Wang<span class="footer-location">Houston, Texas</span></a><nav class="social-links" aria-label="Social links"><a href="https://github.com/ntiger" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/xiao-wang-495b5412/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="https://instagram.com/ntiger" target="_blank" rel="noopener noreferrer">Instagram ↗</a><a href="https://twitter.com/nwtiger" target="_blank" rel="noopener noreferrer">X ↗</a></nav><span class="copyright">© {new Date().getFullYear()}</span></div>
+    </footer>
+    <script>
+      const motion = window.matchMedia('(prefers-reduced-motion: reduce)');
+      if (!motion.matches && 'IntersectionObserver' in window) {
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.animate([{ opacity: 0.6, transform: 'translateY(18px)' }, { opacity: 1, transform: 'translateY(0)' }], { duration: 650, easing: 'cubic-bezier(.2,.65,.3,1)' });
+              observer.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.12 });
+        document.querySelectorAll('[data-reveal]').forEach((element) => observer.observe(element));
+        motion.addEventListener('change', () => { if (motion.matches) { observer.disconnect(); document.getAnimations().forEach((animation) => animation.cancel()); } });
+      }
+    </script>
   </body>
 </html>
